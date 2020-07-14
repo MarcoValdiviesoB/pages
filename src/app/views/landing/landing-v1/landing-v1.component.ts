@@ -6,7 +6,7 @@ import {Component, OnInit} from "@angular/core";
   styleUrls: ["./landing-v1.component.scss"]
 })
 export class LandingV1Component implements OnInit {
-  backgroundColor = "landing-gradient-red-orange";
+  backgroundColor = "landing-gradient-black-gray";
   showCustomizer = false;
   constructor() {}
 
