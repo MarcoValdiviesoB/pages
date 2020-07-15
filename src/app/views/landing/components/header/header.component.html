@@ -7,8 +7,8 @@
             <!-- <a class="navbar-brand d-none d-lg-inline-block" href="#">
     Navbar 6
   </a> -->
-            <a class="navbar-brand-two    d-inline-block" href="#">
-                <img src="assets/images/landing/lOGO_d/logo_white.png" alt="logo">
+            <a class="navbar-brand-two {{getLogoClass()}}    d-inline-block" (click)="changeLogo()" >
+                <img src="assets/images/{{logo}}" alt="logo">
             </a>
             <div class=" text-right">
                 <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"

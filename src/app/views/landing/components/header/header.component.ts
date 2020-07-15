@@ -16,6 +16,7 @@ import {WINDOW_PROVIDERS, WINDOW} from "../../helpers/window.helpers";
 })
 export class HeaderComponent implements OnInit {
   isFixed;
+  logo = "logo-circular.png";
   public isCollapsed = true;
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -38,6 +39,24 @@ export class HeaderComponent implements OnInit {
   }
 
   @HostBinding("class.menu-opened") menuOpened = false;
+
+  changeLogo(){
+    if(this.logo == "logo-circular.png"){
+      this.logo = "sinexion-logo.png"
+    }
+    else{
+      this.logo = "logo-circular.png"
+    }
+  }
+
+  getLogoClass(){
+    if(this.logo == "logo-circular.png"){
+      return "circular"
+    }
+    else{
+      return "recto"
+    }
+  }
 
   toggleMenu() {
     this.menuOpened = !this.menuOpened;

@@ -1,0 +1,15 @@
+{
+    "sx": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-dexam-angular-sx-211407-authRole",
+            "UnauthRoleArn": "arn:aws:iam::405690606020:role/amplify-dexam-angular-sx-211407-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::405690606020:role/amplify-dexam-angular-sx-211407-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-dexam-angular-sx-211407-deployment",
+            "UnauthRoleName": "amplify-dexam-angular-sx-211407-unauthRole",
+            "StackName": "amplify-dexam-angular-sx-211407",
+            "StackId": "arn:aws:cloudformation:us-east-1:405690606020:stack/amplify-dexam-angular-sx-211407/7e4068c0-c638-11ea-83b3-0af9b05c2cc1",
+            "AmplifyAppId": "d272jznlofwfn9"
+        }
+    }
+}
