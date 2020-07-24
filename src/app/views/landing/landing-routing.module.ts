@@ -74,7 +74,7 @@ const routes: Routes = [
   },
    {
     path: "demos",
-    component: DemosComponent
+    component: LandingV2Component
   }
 ];
 

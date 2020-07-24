@@ -1,0 +1,7 @@
+{
+    "sx": {
+        "configLevel": "project",
+        "useProfile": true,
+        "profileName": "aws-sansano"
+    }
+}

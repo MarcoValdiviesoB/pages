@@ -55,6 +55,8 @@ import { BlogDetailsComponent } from './components/blog-details/blog-details.com
 import { BlogDetailsPageComponent } from './blog-details-page/blog-details-page.component';
 import { IntroElevenComponent } from './components/intro-eleven/intro-eleven.component';
 import { LandingV11Component } from './landing-v11/landing-v11.component';
+import { HomeSliderComponent } from './components/home-slider/home-slider.component'
+import { ServiciosScrollComponent } from './components/servicios-scroll/servicios-scroll.component'
 
 @NgModule({
   imports: [
@@ -66,6 +68,8 @@ import { LandingV11Component } from './landing-v11/landing-v11.component';
     FormsModule
   ],
   declarations: [
+    HomeSliderComponent,
+    ServiciosScrollComponent,
     LandingV1Component,
     Intro1Component,
     Intro2Component,

@@ -1,7 +1,8 @@
 #home-header {
   position: fixed;
   width: 100%;
-  background: transparent;
+  background: white !important;
+  color: black !important;
   top: 0;
   left: 0;
   right: 0;
@@ -16,6 +17,7 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-transform: uppercase;
 }
 
 .mobile_menu {
@@ -91,7 +93,7 @@ nav {
       display: inline-block;
       a {
         display: block;
-        color: #fff;
+        color: black;
         cursor: pointer;
       }
       ul {
@@ -252,6 +254,6 @@ span.navbar-toggler-icon .eva {
 }
 
 .navbar-brand-two{
-  width: 120px !important;
+  width: 160px !important;
   padding-top: 1em;
 }

@@ -1,0 +1,34 @@
+.carrousel{
+  height: 100%;
+  ngb-carousel{
+    height: 100%;
+    overflow: hidden;
+  }
+  .carousel-caption{
+    top: 42.5%;
+    max-width: 50%;
+    left: 25%;
+    font-family: 'Montserrat';
+      h3{
+        color: white !important;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+      p{
+        font-size: 1.5em;
+        font-weight: 200;
+      }
+  }
+}
+
+:host ::ng-deep .carousel-item{
+  max-height: 100vh !important;
+}
+
+#protector{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1;
+}

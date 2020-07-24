@@ -9,6 +9,12 @@ import { SharedAnimations } from 'src/app/shared/animations/shared-animations';
 })
 export class IntroNineComponent implements OnInit {
 
+  images = [
+    "assets/images/laudus2.png",
+    "assets/images/KROOSBAR.jpg",
+    "assets/images/foto2.jpg",
+  ]
+
   constructor() { }
 
   ngOnInit() {
