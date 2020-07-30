@@ -1,0 +1,10 @@
+<div class="barra">
+  <h1> ETAPAS DEL PROYECTO </h1>
+  <div class="line">
+  </div>
+  <div class="etapas">
+    <div *ngFor="let etapa of etapas; let i = index;" [ngStyle]="getPosition(i)" class="etapa">
+      <h4>{{etapa}}</h4>
+    </div>
+  </div>
+</div>

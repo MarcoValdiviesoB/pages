@@ -3,5 +3,10 @@
         "configLevel": "project",
         "useProfile": true,
         "profileName": "aws-sansano"
+    },
+    "dx": {
+        "configLevel": "project",
+        "useProfile": true,
+        "profileName": "aws-sansano"
     }
 }

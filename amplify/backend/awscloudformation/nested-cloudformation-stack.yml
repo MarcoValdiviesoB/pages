@@ -71,10 +71,10 @@
 		"hostingS3AndCloudFront": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/amplify-dexam-angular-sx-211407-deployment/amplify-cfn-templates/hosting/template.json",
+				"TemplateURL": "https://s3.amazonaws.com/amplify-dexam-angular-dx-122100-deployment/amplify-cfn-templates/hosting/template.json",
 				"Parameters": {
-					"bucketName": "dexam-angular-20200714211558-hostingbucket",
-					"env": "sx"
+					"bucketName": "dexam-angular-20200724122241-hostingbucket",
+					"env": "dx"
 				}
 			}
 		}

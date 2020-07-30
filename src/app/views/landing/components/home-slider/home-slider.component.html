@@ -1,22 +1,25 @@
 <section class="carrousel">
-  <div *ngIf="protector" id="protector"></div>
   <ngb-carousel [showNavigationArrows]="false">
     <ng-template ngbSlide>
+      <div *ngIf="protector" id="protector"></div>
       <div class="picsum-img-wrapper">
         <img [src]="images[0]" alt="Random first slide">
       </div>
       <div class="carousel-caption">
-        <h3>ALMUT</h3>
-        <p>Es una organizacion dedicada a la creacion de espacios, que ofrece servicios de fabricacion de mobiliario especializado para las necesidades de sus clientes</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[1]" alt="Random first slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <div class="row">
+          <div class="col-6">
+            <h1>CREACIÓN <br> DE ESPACIOS</h1>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>COMERCIAL</li>
+              <li>RESIDENCIAL</li>
+              <li>OFICINAS</li>
+              <li>AREA SALUD</li>
+              <li>UNIVERSIDADES</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </ng-template>
   </ngb-carousel>

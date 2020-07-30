@@ -1,4 +1,13 @@
 app-home-slider{
-  height: 100vh;
+  max-height: 100vh;
   display: inline-block;
+  min-height: 400px;
+}
+.btn{
+  box-shadow: 1px 1px 2px 2px;
+  background: black;
+  color: white;
+  font-size: 1.2em;
+  width: 70%;
+  margin: 2em 15%;
 }

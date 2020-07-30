@@ -1,0 +1,19 @@
+<section id="proyectos-wrap" class="proyectos-wrap">
+  <div class="container">
+    <h1>PROYECTOS</h1>
+    <div class="row">
+      <div class="col-7">
+        <div class="images-container">
+        </div>
+      </div>
+      <div class="col-5">
+        <nav class="lista">
+          <ul>
+            <li *ngFor="let proyecto of proyectos" (click)="select(proyecto)" [ngStyle] = " selected == proyecto ? { background:'black', color : 'white', 'font-weight' : '800' } : {}">{{proyecto}}</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <app-etapas></app-etapas>
+  </div>
+</section>

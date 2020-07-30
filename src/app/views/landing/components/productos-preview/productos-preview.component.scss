@@ -1,0 +1,27 @@
+.productos-preview-wrap{
+  font-size: 1.5em;
+  padding: 2em 0;
+  height: 15em;
+  h2{
+    text-align: center;
+    font-weight: 800 !important;
+    font-size: 1.4em;
+  }
+  p{
+    text-align: center;
+  }
+  h1{
+    font-size: 1.5em;
+    color: black !important;
+    text-align: center;
+    font-weight: 800 !important;
+    width: 90%;
+    margin-left: 5%;
+  }
+  img{
+    height: 15em;
+    width: auto;
+    margin-top: -3em;
+    margin-left: 5em;
+  }
+}

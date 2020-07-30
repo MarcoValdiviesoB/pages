@@ -56,7 +56,11 @@ import { BlogDetailsPageComponent } from './blog-details-page/blog-details-page.
 import { IntroElevenComponent } from './components/intro-eleven/intro-eleven.component';
 import { LandingV11Component } from './landing-v11/landing-v11.component';
 import { HomeSliderComponent } from './components/home-slider/home-slider.component'
-import { ServiciosScrollComponent } from './components/servicios-scroll/servicios-scroll.component'
+import { ServiciosScrollComponent } from './components/servicios-scroll/servicios-scroll.component';
+import { PresentacionComponent } from './components/presentacion/presentacion.component';
+import { ProductosPreviewComponent } from './components/productos-preview/productos-preview.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { EtapasComponent } from './components/etapas/etapas.component'
 
 @NgModule({
   imports: [
@@ -117,6 +121,10 @@ import { ServiciosScrollComponent } from './components/servicios-scroll/servicio
     BlogDetailsPageComponent,
     IntroElevenComponent,
     LandingV11Component,
+    PresentacionComponent,
+    ProductosPreviewComponent,
+    ProyectosComponent,
+    EtapasComponent,
 
   ],
   providers: [WINDOW_PROVIDERS]

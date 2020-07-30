@@ -1,0 +1,29 @@
+.proyectos-wrap{
+  padding-bottom: 2em;
+  h1{
+    font-size: 2.55em;
+    color: black !important;
+    text-align: center;
+    font-weight: 800 !important;
+    margin-bottom: 2em;
+  }
+  .images-container{
+    height: 500px;
+    width: 100%;
+    background-image: url("/assets/images/KROOSBAR.jpg");
+    background-size: cover;
+  }
+  li{
+    display: block;
+    font-size: 2em;
+    margin: 0.25em;
+    padding-left: 1em;
+    transition: 0.3s ease;
+    &:hover{
+      cursor: pointer;
+      background: rgba(0,0,0,0.4);
+      color: white;
+      font-weight: 800;
+    }
+  }
+}
