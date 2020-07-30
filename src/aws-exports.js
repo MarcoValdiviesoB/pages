@@ -2,9 +2,9 @@
 
 const awsmobile = {
     "aws_project_region": "us-east-1",
-    "aws_content_delivery_bucket": "dexam-angular-20200724122241-hostingbucket-dx",
+    "aws_content_delivery_bucket": "dexam-angular-20200724122241-hostingbucket-fela",
     "aws_content_delivery_bucket_region": "us-east-1",
-    "aws_content_delivery_url": "https://d3c8vmeb6ytorl.cloudfront.net"
+    "aws_content_delivery_url": "https://d1th52ikn5ct6a.cloudfront.net"
 };
 
 

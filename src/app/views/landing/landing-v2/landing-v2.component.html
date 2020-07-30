@@ -1,15 +1,11 @@
 <div class="landing_wrap " [ngClass]="[backgroundColor]">
     <app-header></app-header>
-    <app-home-slider></app-home-slider>
     <app-presentacion></app-presentacion>
-    <app-productos-preview></app-productos-preview>
-    <app-proyectos></app-proyectos>
-    <!-- <app-news></app-news> -->
-
-    <app-contact-form></app-contact-form>
+    <app-logo></app-logo>
+    <app-videos></app-videos>
     <app-footer></app-footer>
     <!-- customizer start -->
-    <div class="customizer card" [ngClass]="{show: showCustomizer}">
+    <div *ngIf="false" class="customizer card" [ngClass]="{show: showCustomizer}">
         <div class="row">
             <div class="col-md-12">
                 <div class=" setting_wrap" (click)="toggleCustomizer()">

@@ -84,6 +84,11 @@ a {
 
 // dropdown menu
 nav {
+  display: flex;
+  flex-direction: column;
+  img{
+    width: 100%;
+  }
   ul {
     padding: 0;
     margin: 0;
