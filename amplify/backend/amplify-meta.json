@@ -20,7 +20,7 @@
                 "s3TemplateURL": "https://s3.amazonaws.com/amplify-dexam-angular-dx-122100-deployment/amplify-cfn-templates/hosting/template.json",
                 "logicalId": "hostingS3AndCloudFront"
             },
-            "lastPushTimeStamp": "2020-07-29T19:26:56.749Z",
+            "lastPushTimeStamp": "2020-07-31T22:49:47.522Z",
             "output": {
                 "CloudFrontSecureURL": "https://d3c8vmeb6ytorl.cloudfront.net",
                 "S3BucketSecureURL": "https://dexam-angular-20200724122241-hostingbucket-dx.s3.amazonaws.com",

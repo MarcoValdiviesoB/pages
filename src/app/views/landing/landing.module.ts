@@ -60,7 +60,9 @@ import { ServiciosScrollComponent } from './components/servicios-scroll/servicio
 import { PresentacionComponent } from './components/presentacion/presentacion.component';
 import { ProductosPreviewComponent } from './components/productos-preview/productos-preview.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
-import { EtapasComponent } from './components/etapas/etapas.component'
+import { EtapasComponent } from './components/etapas/etapas.component';
+import { PendienteComponent } from './components/pendiente/pendiente.component';
+import { MozaicoComponent } from './components/mozaico/mozaico.component'
 
 @NgModule({
   imports: [
@@ -125,6 +127,8 @@ import { EtapasComponent } from './components/etapas/etapas.component'
     ProductosPreviewComponent,
     ProyectosComponent,
     EtapasComponent,
+    PendienteComponent,
+    MozaicoComponent,
 
   ],
   providers: [WINDOW_PROVIDERS]

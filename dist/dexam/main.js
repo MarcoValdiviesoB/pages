@@ -163,6 +163,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./shared/shared.module */ "./src/app/shared/shared.module.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm5/http.js");
+/* harmony import */ var _pendiente_pendiente_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pendiente/pendiente.component */ "./src/app/pendiente/pendiente.component.ts");
+
 
 
 
@@ -185,7 +187,7 @@ var AppModule = /** @class */ (function () {
     return AppModule;
 }());
 
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pendiente_pendiente_component__WEBPACK_IMPORTED_MODULE_7__["PendienteComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_5__["SharedModule"],
         _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
@@ -193,7 +195,7 @@ var AppModule = /** @class */ (function () {
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-                declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
+                declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pendiente_pendiente_component__WEBPACK_IMPORTED_MODULE_7__["PendienteComponent"]],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                     _shared_shared_module__WEBPACK_IMPORTED_MODULE_5__["SharedModule"],
@@ -205,6 +207,45 @@ var AppModule = /** @class */ (function () {
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
             }]
     }], null, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/pendiente/pendiente.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/pendiente/pendiente.component.ts ***!
+  \**************************************************/
+/*! exports provided: PendienteComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PendienteComponent", function() { return PendienteComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm5/core.js");
+
+
+var PendienteComponent = /** @class */ (function () {
+    function PendienteComponent() {
+    }
+    PendienteComponent.prototype.ngOnInit = function () {
+    };
+    PendienteComponent.ɵfac = function PendienteComponent_Factory(t) { return new (t || PendienteComponent)(); };
+    PendienteComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PendienteComponent, selectors: [["app-pendiente"]], decls: 2, vars: 0, template: function PendienteComponent_Template(rf, ctx) { if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "pendiente works!");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BlbmRpZW50ZS9wZW5kaWVudGUuY29tcG9uZW50LnNjc3MifQ== */"] });
+    return PendienteComponent;
+}());
+
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PendienteComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-pendiente',
+                templateUrl: './pendiente.component.html',
+                styleUrls: ['./pendiente.component.scss']
+            }]
+    }], function () { return []; }, null); })();
 
 
 /***/ }),

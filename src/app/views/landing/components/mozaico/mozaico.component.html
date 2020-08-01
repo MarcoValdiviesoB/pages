@@ -1,0 +1,8 @@
+<div class="mozaico">
+  <div class="row">
+    <div *ngFor="let imagen of imagenes" class="col-{{imagen.width}}" class="contenedor">
+      <div class="imagen" [ngStyle]="bgImage(imagen.src)">
+      </div>
+    </div>
+  </div>
+</div>
