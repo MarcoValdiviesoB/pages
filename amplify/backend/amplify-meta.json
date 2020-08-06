@@ -20,7 +20,7 @@
                 "s3TemplateURL": "https://s3.amazonaws.com/amplify-dexam-angular-fela-02715-deployment/amplify-cfn-templates/hosting/template.json",
                 "logicalId": "hostingS3AndCloudFront"
             },
-            "lastPushTimeStamp": "2020-07-30T05:20:15.475Z",
+            "lastPushTimeStamp": "2020-08-05T11:58:55.117Z",
             "output": {
                 "CloudFrontSecureURL": "https://d1th52ikn5ct6a.cloudfront.net",
                 "S3BucketSecureURL": "https://dexam-angular-20200724122241-hostingbucket-fela.s3.amazonaws.com",

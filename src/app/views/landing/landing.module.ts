@@ -62,7 +62,8 @@ import { ProductosPreviewComponent } from './components/productos-preview/produc
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { EtapasComponent } from './components/etapas/etapas.component';
 import { LogoComponent } from './components/logo/logo.component';
-import { VideosComponent } from './components/videos/videos.component'
+import { VideosComponent } from './components/videos/videos.component';
+import { FichaComponent } from './components/ficha/ficha.component'
 
 @NgModule({
   imports: [
@@ -129,6 +130,7 @@ import { VideosComponent } from './components/videos/videos.component'
     EtapasComponent,
     LogoComponent,
     VideosComponent,
+    FichaComponent,
 
   ],
   providers: [WINDOW_PROVIDERS]

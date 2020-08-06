@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DatabaseService } from '../../services/database.service'
 @Component({
   selector: 'app-presentacion',
   templateUrl: './presentacion.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentacionComponent implements OnInit {
 
-  constructor() { }
+  constructor( public db:DatabaseService) { }
 
   ngOnInit(): void {
   }

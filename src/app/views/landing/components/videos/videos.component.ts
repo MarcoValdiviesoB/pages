@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DatabaseService } from '../../services/database.service'
 
 @Component({
   selector: 'app-videos',
@@ -7,25 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideosComponent implements OnInit {
 
-  videos = [
-    {
-      titulo : "Recuerdos Nocturnos",
-      url: "",
-      duracion: "12",
-      imagePreview: "https://i.pinimg.com/originals/8f/92/fa/8f92fa142c263dc8d862dcb6010fa30d.jpg",
-      resumen: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  videos = []
 
-    },
-    {
-      titulo : "Caminos de Bosque",
-      url: "",
-      duracion: "12",
-      imagePreview: "https://i.pinimg.com/originals/8f/92/fa/8f92fa142c263dc8d862dcb6010fa30d.jpg",
-      resumen: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    }
-  ]
+  headTo(video){
+    this.router.navigateByUrl("/fichas/video")
+  }
 
-  constructor() { }
+  constructor( private db:DatabaseService , private router:Router) {
+    this.videos = Object.keys(db.metrajes[db.idioma])
+  }
 
   ngOnInit(): void {
   }

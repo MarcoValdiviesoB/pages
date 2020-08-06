@@ -14,6 +14,7 @@ import { LandingV9Component } from './landing-v9/landing-v9.component';
 import { LandingV10Component } from './landing-v10/landing-v10.component';
 import { DemosComponent } from './components/demos/demos.component';
 import { LandingV11Component } from "./landing-v11/landing-v11.component";
+import { FichaComponent } from './components/ficha/ficha.component';
 
 const routes: Routes = [
   {
@@ -73,8 +74,12 @@ const routes: Routes = [
     component: BlogDetailsPageComponent
   },
    {
-    path: "demos",
+    path: "inicio",
     component: LandingV2Component
+  },
+  {
+    path:"fichas/:pelicula",
+    component: FichaComponent
   }
 ];
 

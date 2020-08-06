@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="ficha-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <h1>{{pelicula.nombre}} ({{pelicula.duracion}} min - {{pelicula.anno}})</h1>
+        <h3>{{pelicula.descripcion}}</h3>
+        <!--- images -->
+        <div class="imagenes">
+          <img src="assets/images/{{currentImg}}">
+          <div class="controls">
+            <h4>{{this.imgIndex+1}}/{{this.pelicula.images.length}}</h4>
+            <i (click)="passImage(-1)" class="fa fa-arrow-left"></i>
+            <i (click)="passImage(1)" class="fa fa-arrow-right"></i>
+          </div>
+        </div>
+        <!-- end images -->
+        <div *ngFor="let dato of datos">
+          <h4>{{dato}}</h4>
+          <div *ngIf="isArray(pelicula.ficha[dato])">
+            <h5 *ngFor="let valor of pelicula.ficha[dato]">{{valor}}</h5>
+          </div>
+          <h5 *ngIf="!isArray(pelicula.ficha[dato])">{{pelicula.ficha[dato]}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -2,7 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-lg-6 col-10">
-        <h2>Somos un grupo de realizadores buscando nuevas formas de hacer películas</h2>
+        <h2 *ngIf="db.idioma =='es'">Somos un grupo de realizadores buscando nuevas formas de hacer películas</h2>
+        <h2 *ngIf="db.idioma =='en'">Somos un grupo de realizadores buscando nuevas formas de hacer películas</h2>
       </div>
     </div>
   </div>
