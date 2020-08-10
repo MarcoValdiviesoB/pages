@@ -17,11 +17,27 @@
     font-weight: 800 !important;
     width: 90%;
     margin-left: 5%;
+    border-bottom: 1px solid black;
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 1em;
   }
   img{
     height: 15em;
     width: auto;
     margin-top: -3em;
     margin-left: 5em;
+  }
+}
+@media (max-width: 600px) {
+  .productos-preview-wrap{
+    font-size: 1.1em !important;
+    .btn{
+      width: 80%;
+      margin-left: 10%;
+    }
+    img{
+      display: none;
+    }
   }
 }

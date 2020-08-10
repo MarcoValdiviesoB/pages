@@ -1,0 +1,22 @@
+.intermedio-wrap{
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  h2{
+    font-size: 2em;
+  }
+  span{
+    background: #f1bc32;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+
+@media (max-width: 600px) {
+  .intermedio-wrap{
+    font-size: 0.7em !important;
+  }
+}

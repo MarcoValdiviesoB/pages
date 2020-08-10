@@ -11,7 +11,6 @@ export class MozaicoComponent implements OnInit {
     { width: 12, src:"1.jpg" },
     { width: 6, src:"2.jpg" },
     { width: 6, src:"4.jpg" },
-    { width: 12, src:"3.jpg" },
   ]
 
   bgImage(img){

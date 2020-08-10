@@ -10,13 +10,19 @@
     font-weight: 800 !important;
     margin-bottom: 2em;
   }
+  .titulo{
+    border-bottom: 1px solid black;
+    width: 30%;
+    margin-left: 35%;
+    padding-bottom: 0.5em;
+  }
   .lista{
     transition: 1s ease;
   }
   .images-container{
     height: 500px;
     width: 100%;
-    background-image: url("/assets/images/KROOSBAR.jpg");
+    background-image: url("/assets/images/KROOSBAR.png");
     background-size: cover;
     .play{
       display: none;
@@ -60,4 +66,23 @@
   scroll-behavior: smooth;
   transition: 2s ease;
   speed: 100;
+}
+
+@media (max-width: 600px) {
+  .proyectos-wrap{
+    font-size: 0.7em !important;
+    h1{
+      font-size: 2.1em;
+    }
+    h3{
+      font-size: 1.3em !important;
+    }
+    p{
+      text-align: justify;
+    }
+  }
+
+  #big-picture, #menu{
+    display: none;
+  }
 }
