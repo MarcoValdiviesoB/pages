@@ -8,7 +8,8 @@ import {
 } from "@angular/core";
 import {DOCUMENT} from "@angular/common";
 import {WINDOW_PROVIDERS, WINDOW} from "../../helpers/window.helpers";
-
+import { DatabaseService } from '../../services/database.service';
+import { Router } from '@angular/router'
 @Component({
   selector: "app-header",
   templateUrl: "./header.component.html",
@@ -16,10 +17,13 @@ import {WINDOW_PROVIDERS, WINDOW} from "../../helpers/window.helpers";
 })
 export class HeaderComponent implements OnInit {
   isFixed;
+  toggled;
   public isCollapsed = true;
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    @Inject(WINDOW) private window: Window
+    @Inject(WINDOW) private window: Window,
+    public db:DatabaseService,
+    private router:Router,
   ) {}
 
   ngOnInit() {}
@@ -37,11 +41,21 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  cambiarIdioma(idioma){
+    this.db.idioma = idioma
+    console.log(this.db.idioma)
+    this.router.navigateByUrl("")
+  }
+
   @HostBinding("class.menu-opened") menuOpened = false;
 
   toggleMenu() {
     this.menuOpened = !this.menuOpened;
   }
+  goToHome(){
+    this.router.navigateByUrl("")
+  }
+
   hidemenu() {
     this.isCollapsed = true;
   }

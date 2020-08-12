@@ -15,7 +15,7 @@ export class VideosComponent implements OnInit {
     this.router.navigateByUrl("/fichas/video")
   }
 
-  constructor( private db:DatabaseService , private router:Router) {
+  constructor( public db:DatabaseService , private router:Router) {
     this.videos = Object.keys(db.metrajes[db.idioma])
   }
 

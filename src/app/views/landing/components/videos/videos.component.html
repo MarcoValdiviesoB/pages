@@ -1,13 +1,14 @@
 <section id="videos-wrap" class="videos-wrap">
   <div class="container">
-    <h4>PROYECTOS</h4>
+    <h4 *ngIf="db.idioma == 'es'">PROYECTOS</h4>
+    <h4 *ngIf="db.idioma == 'en'">PROJECTS</h4>
     <div class="row">
       <div *ngFor="let video of videos" (click)="headTo(db.metrajes[db.idioma][video].nombre)" class="video col-6">
-        <a [routerLink]="['/fichas/'+db.metrajes[db.idioma][video].nombre]"><div class="wrapper">
+        <a [routerLink]="['/fichas/'+video]"><div class="wrapper">
           <div class="preview">
             <img src="assets/images/{{db.metrajes[db.idioma][video].portada}}">
           </div>
-          <h5>{{db.metrajes[db.idioma][video].nombre}} | {{db.metrajes[db.idioma][video].duracion}} min </h5>
+          <h5>{{db.metrajes[db.idioma][video].nombre}} | {{db.metrajes[db.idioma][video].duracion}} </h5>
           <p>{{db.metrajes[db.idioma][video].descripcion}}</p>
         </div></a>
       </div>

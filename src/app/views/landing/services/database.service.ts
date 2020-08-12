@@ -13,7 +13,7 @@ export class DatabaseService {
 
   metrajes = {
     "en" : {
-    "Forest Paths" : {
+    "Caminos de Bosque" : {
       nombre: "Forest Paths",
       descripcion: "Yvo, Demian and Rosa, childhood friends, lose their way in the dark when they decide to go out searching for Gabriel. As they move forward, the need to go back becomes inevitable.",
       images : [
@@ -24,7 +24,7 @@ export class DatabaseService {
         "film2/5.jpeg",
       ],
       portada : "film1/portada.jpeg",
-      duracion : 61,
+      duracion : "",
       anno: "2020",
       ficha: {
         "Cast": [
@@ -40,34 +40,36 @@ export class DatabaseService {
         "Post Production" : "Christoffer Baeza Jiménez ",
       }
     },
-    "ss" : {
-      nombre: "Forest Paths",
-      descripcion: "",
-      duracion : 61,
+    "Recuerdos Nocturnos" : {
+      nombre: "Night Memories",
+      descripcion: "A transit through four situations with no apparent connection to each other. In each story, silence, sex, travel or even life is interrupted. ",
+      duracion : "08 min.",
       portada : "film2/portada.jpg",
       anno: "2020",
       images:[
         "film1/1.jpg",
         "film1/2.jpg",
+        "film1/3.jpg",
+        "film1/4.jpg",
       ],
       ficha: {
-        "Casting": [
+        "Cast": [
           "Belén Herrera Riquelme",
           "Daniel Antivilo",
-          "Millaray Torriello Viereck",
+          "Millaray Toriello Viereck",
           "Carlos Nemesio González",
           "Sebastián Ayala Alveal",
           "Gonzalo Bustos Lillo",
           "Diego González Rodríguez",
         ],
-        "Guión y dirección" : "Ariel Velasco González",
-        "Producción" : "Tomás Plana Somerville",
-        "Dirección de arte" : "Sofia Nuñez Rillón",
-        "Dirección de fotografía" : "Antonio Ananias Botta",
-        "Asistencia de dirección y Montaje" : "Pablo Fergnani Sepulveda",
-        "Montaje" : "Rocio Ortega Armijo",
-        "Diseño de sonido" : "Julián Bravo González",
-        "Post color" : "Guido Goñi",
+        "Written and directed by" : "Ariel Velasco González",
+        "Production" : "Tomás Plana Somerville",
+        "Art director" : "Sofia Nuñez Rillón",
+        "Cinematography" : "Antonio Ananias Botta",
+        "Assistant director" : "Pablo Fergnani Sepulveda",
+        "Editor" : "Rocio Ortega Armijo",
+        "Sound designer" : "Julián Bravo González",
+        "Color grading" : "Guid Goñi",
       }
     }
   },
@@ -83,7 +85,7 @@ export class DatabaseService {
         "film2/5.jpeg",
       ],
       portada : "film1/portada.jpeg",
-      duracion : 61,
+      duracion : "",
       anno: "2020",
       ficha: {
         "Casting": [
@@ -102,7 +104,7 @@ export class DatabaseService {
     "Recuerdos Nocturnos" : {
       nombre: "Recuerdos Nocturnos",
       descripcion: "Un tránsito a través de cuatro situaciones sin conexión aparente entre sí. En cada historia se ve interrumpido el silencio, el sexo, el viaje o incluso la vida.",
-      duracion : 8,
+      duracion : "08 mins.",
       portada : "film2/portada.jpg",
       anno: "2020",
       images:[
@@ -115,8 +117,8 @@ export class DatabaseService {
         "Casting": [
           "Belén Herrera Riquelme",
           "Daniel Antivilo",
-          "Millaray Torriello Viereck",
-          "Carlos Nemesio González",
+          "Millaray Toriello Viereck",
+          "Carlos González Rodríguez",
           "Sebastián Ayala Alveal",
           "Gonzalo Bustos Lillo",
           "Diego González Rodríguez",
@@ -125,8 +127,9 @@ export class DatabaseService {
         "Producción" : "Tomás Plana Somerville",
         "Dirección de arte" : "Sofia Nuñez Rillón",
         "Dirección de fotografía" : "Antonio Ananias Botta",
-        "Asistencia de dirección y Montaje" : "Pablo Fergnani Sepulveda",
+        "Asistencia de dirección" : "Pablo Fergnani Sepulveda",
         "Diseño de sonido" : "Julián Bravo González",
+        "Montaje" : "Rocio Ortega Armijo",
         "Post color" : "Guido Goñi",
       }
     }
