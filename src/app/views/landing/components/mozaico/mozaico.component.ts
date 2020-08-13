@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mozaico',
@@ -7,14 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MozaicoComponent implements OnInit {
 
-  imagenes = [
-    { width: 12, src:"1.jpg" },
-    { width: 6, src:"2.jpg" },
-    { width: 6, src:"4.jpg" },
-  ]
+  @Input() proyecto
 
   bgImage(img){
-    return {"background-image": 'url(/assets/images/Kross/'+img+")" }
+    const bgImg = 'url(/assets/images/'+this.proyecto.nombre+'/'+img+")"
+    console.log(bgImg)
+    return {"background-image": bgImg }
   }
 
   constructor() { }

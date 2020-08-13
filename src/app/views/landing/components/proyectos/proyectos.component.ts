@@ -13,28 +13,61 @@ export class ProyectosComponent implements OnInit {
      "Laudus",
      "UC Christus",
      "Clinica Santa María",
-     "Residencial"
    ]
 
-   imagenes = {
-     "Kross":[
-
-     ],
-     "Uss":[
-
-     ],
-     "Laudus":[
-
-     ],
-     "UC Christus":[
-
-     ],
-     "Clinica Santa María":[
-
-     ],
+     datos = {
+     "Kross":{
+       nombre: "Kross",
+       portada:"1.jpg",
+       imagenes:[
+         { width:12, src:"1.jpg" },
+         { width: 6, src:"2.jpg" },
+         { width: 6, src:"4.jpg" },
+       ]
+     },
+     "Uss":{
+       nombre: "Uss",
+       portada:"1.jpg",
+       imagenes:[
+         { width:12, src:"1.jpg" },
+         { width: 6, src:"2.jpg" },
+         { width: 6, src:"3.jpg" },
+       ]
+     },
+     "Laudus":{
+       nombre: "Laudus",
+       portada:"1.jpg",
+       imagenes:[
+         { width:12, src:"1.jpg" },
+         { width: 6, src:"2.jpg" },
+         { width: 6, src:"3.jpg" },
+       ]
+     },
+     "UC Christus":{
+       nombre: "UC_Christus",
+       portada:"1.jpg",
+       imagenes:[
+         { width:12, src:"1.jpg" },
+         { width: 6, src:"2.jpg" },
+         { width: 6, src:"3.jpg" },
+       ]
+     },
+     "Clinica Santa María":{
+       nombre: "Clinica_Santa_María",
+       portada:"1.jpg",
+       imagenes:[
+         { width:12, src:"1.jpg" },
+         { width: 6, src:"2.jpg" },
+         { width: 6, src:"3.jpg" },
+       ]
+     },
    }
 
    selected
+
+   getBg(){
+     return {"background-image":"url('/assets/images/" + this.datos[this.selected].nombre + "/" + this.datos[this.selected].portada + "'"}
+   }
 
    timer = 0;
    fixed = false

@@ -4,7 +4,7 @@
     <div class="visor" id="visor">
       <div class="row">
         <div id="big-picture" class="col-4">
-          <div class="images-container" (click)="selectProyecto()">
+          <div class="images-container" (click)="selectProyecto()" [ngStyle]="getBg()">
             <div class="play">
               <h1>{{selected}}</h1>
               <button class="btn">VER MAS</button>
@@ -19,7 +19,7 @@
           </nav>
         </div>
         <div class="col-3">
-          <app-mozaico></app-mozaico>
+          <app-mozaico [proyecto]="datos[selected]"></app-mozaico>
         </div>
         <div class="col-3">
           <h1 style="text-align:left;margin-bottom:0.25em;">{{selected}}</h1>
