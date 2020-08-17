@@ -1,7 +1,7 @@
 <div class="mozaico">
   <div class="row">
-    <div *ngFor="let imagen of proyecto.imagenes" class="col-{{imagen.width}}" class="contenedor">
-      <div class="imagen" [ngStyle]="bgImage(imagen.src)">
+    <div *ngFor="let imagen of proyecto.imagenes; let i = index" class="col-{{imagen.width}}" class="contenedor">
+      <div class="imagen" (click)="open(i)" [ngStyle]="bgImage(imagen.src)">
       </div>
     </div>
   </div>

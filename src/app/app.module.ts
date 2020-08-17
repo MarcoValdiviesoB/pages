@@ -8,9 +8,10 @@ import { SharedModule } from './shared/shared.module';
 
 import { HttpClientModule } from '@angular/common/http';
 import { PendienteComponent } from './pendiente/pendiente.component';
+import { EnConstruccionComponent } from './en-construccion/en-construccion.component';
 
 @NgModule({
-  declarations: [AppComponent, PendienteComponent],
+  declarations: [AppComponent, PendienteComponent, EnConstruccionComponent],
   imports: [
     BrowserModule,
     SharedModule,

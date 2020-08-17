@@ -5,7 +5,7 @@
   h2{
     font-size: 2em;
   }
-  span{
+  .marker{
     background: #f1bc32;
     color: white;
     padding-left: 1em;
@@ -13,6 +13,10 @@
   }
   margin-top: 1em;
   margin-bottom: 5em;
+  .autor{
+    opacity: 0.8;
+    font-style: italic;
+  }
 }
 
 @media (max-width: 600px) {

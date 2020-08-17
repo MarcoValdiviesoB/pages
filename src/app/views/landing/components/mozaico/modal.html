@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+      </div>
+      <div class="col-6">
+        <h1 style="text-align:center">{{folder.replace(re," ")}}    <span style="margin-left:2em;">{{index + 1}}/{{images.length}}</span></h1>
+      </div>
+      <div class="col-3">
+        <i (click)="this.activeModal.close()" id="close" class="fas fa-times"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="img-outer">
+    <i id="next" (click)="nextIndex(1)" class="fas fa-chevron-right"></i>
+    <i id="previous" (click)="nextIndex(-1)" class="fas fa-chevron-left"></i>
+    <img src="assets/images/{{folder}}/{{images[index].src}}">
+  </div>
+</div>

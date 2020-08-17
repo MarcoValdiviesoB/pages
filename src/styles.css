@@ -16,3 +16,17 @@ app-home-slider{
   color: white;
   box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.6)
 }
+.modal-window .modal-dialog{
+  max-width: 100% !important;
+  max-height: 100%;
+  background: transparent;
+}
+
+.modal-window .modal-dialog .modal-content{
+  background: transparent;
+  border: none
+}
+.modal-backdrop
+{
+    opacity:1 !important;
+}

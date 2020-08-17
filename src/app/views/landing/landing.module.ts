@@ -63,7 +63,8 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { EtapasComponent } from './components/etapas/etapas.component';
 import { PendienteComponent } from './components/pendiente/pendiente.component';
 import { MozaicoComponent } from './components/mozaico/mozaico.component';
-import { IntermedioComponent } from './components/intermedio/intermedio.component'
+import { IntermedioComponent } from './components/intermedio/intermedio.component';
+import { EnConstruccionComponent } from './components/en-construccion/en-construccion.component'
 
 @NgModule({
   imports: [
@@ -131,6 +132,7 @@ import { IntermedioComponent } from './components/intermedio/intermedio.componen
     PendienteComponent,
     MozaicoComponent,
     IntermedioComponent,
+    EnConstruccionComponent,
 
   ],
   providers: [WINDOW_PROVIDERS]
