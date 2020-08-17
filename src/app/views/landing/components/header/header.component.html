@@ -2,8 +2,8 @@
   <div class="container">
     <img (click)="goToHome()" src="assets/images/disenno.png">
     <div class="control-idioma">
-      <h2 *ngIf="db.idioma == 'es'">IDIOMA<i class="fas fa-caret-right"></i></h2>
-      <h2 *ngIf="db.idioma == 'en'">LANGUAGE<i class="fas fa-caret-right"></i></h2>
+      <h2 (tap) = "cambiarIdioma('en')" *ngIf="db.idioma == 'es'">ES<i class="fas fa-caret-right"></i></h2>
+      <h2 (tap) = "cambiarIdioma('es')" *ngIf="db.idioma == 'en'">EN<i class="fas fa-caret-right"></i></h2>
       <nav>
         <li (click)="cambiarIdioma('en')">English</li>
         <li (click)="cambiarIdioma('es')">Español</li>

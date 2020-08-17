@@ -3,6 +3,11 @@
     <app-presentacion></app-presentacion>
     <app-logo></app-logo>
     <app-videos></app-videos>
+    <div class="container">
+      <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/443563766?color=ffffff&amp;byline=0&amp;portrait=0" width={{getVideoWidth()}} height={{getVideoHeight()}} frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+      </div>
+    </div>
     <app-footer></app-footer>
     <!-- customizer start -->
     <div *ngIf="false" class="customizer card" [ngClass]="{show: showCustomizer}">

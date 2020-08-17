@@ -18,4 +18,11 @@ export class LandingV2Component implements OnInit {
   toggleCustomizer() {
     this.showCustomizer = !this.showCustomizer;
   }
+  getVideoWidth(){
+    return document.getElementsByClassName("container")[0].clientWidth
+  }
+  getVideoHeight(){
+    return document.getElementsByClassName("container")[0].clientWidth * 0.56
+  }
+
 }
