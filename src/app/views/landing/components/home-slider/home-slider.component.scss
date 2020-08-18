@@ -7,7 +7,7 @@
   .carousel-caption{
     top: 35.5%;
     max-width: 60%;
-    left: 25%;
+    left: 40%;
     font-family: 'Montserrat';
     font-size: 1vw;
     ul{
@@ -17,12 +17,18 @@
       border-left: 1px solid #f1bc32;
       list-style-type: none;
     }
+    .btn{
+      background: white !important;
+      color: black !important;
+      width: 40%;
+      float: left;
+      margin: 1em 0;
+      font-size: 1.5em;
+    }
     h1{
-      color: #f1bc32;
-      font-size: 3.5em;
-      font-weight: 800;
+      color: white;
+      font-size: 2.5em;
       text-align: left;
-      margin-top: 12.5%;
     }
       h3{
         color: white !important;

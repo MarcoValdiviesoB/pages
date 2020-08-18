@@ -1,14 +1,40 @@
 <nav id="home-header" [ngClass]="{'header-fixed': isFixed}" class="navbar navbar-expand-lg text-16 ">
     <div class="container">
 
+      <div class="collapse  navbar-collapse flex-grow-1" id="collapseExample" [ngbCollapse]="isCollapsed">
+          <ul class="navbar-nav flex-nowrap">
+            <!-- drop down menu start -->
+            <li class="nav-item">
+              <a class="nav-link m-2 menu-item">Servicios</a>
+              <!-- First  Drop Down -->
+              <ul>
+                <li (click)="hidemenu()" class="nav-item">
+                  <a href="#presentacion-wrap" scrollTo="teams-wrap" class="  menu-item" scrollTo="presentacion-wrap">Servicio 1</a>
+                </li>
+                <li (click)="hidemenu()" class="nav-item">
+                  <a href="#" scrollTo="testimonials-wrap" class="  menu-item">Servicio 2</a>
+                </li>
+                <li (click)="hidemenu()" class="nav-item">
+                  <a href="#" scrollTo="extra-feature-wrap" class="  menu-item">Servicio 3</a>
+                </li>
+              </ul>
+            </li>
+            <!-- drop down menu end -->
 
-        <div class="d-flex justify-content-between flex-grow-1 mobile_menu">
+              <li (click)="hidemenu()" class="nav-item">
+                  <a href="#proyectos-wrap" scrollTo="proyectos-wrap" class="nav-link m-2 menu-item nav-active">Proyectos</a>
+              </li>
+          </ul>
+      </div>
+        <div class="d-flex justify-content-center flex-grow-1 mobile_menu">
 
             <!-- <a class="navbar-brand d-none d-lg-inline-block" href="#">
     Navbar 6
   </a> -->
             <a class="navbar-brand-two    d-inline-block" href="#">
-                <img id="logo" src="assets/images/almut-logo-negro.png" alt="logo">
+                <div class="circle-img-container">
+                  <img id="logo" src="assets/images/ps-logo.png" alt="logo">
+                </div>
             </a>
             <div class=" text-right">
                 <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
@@ -30,26 +56,7 @@
         <div class="collapse  navbar-collapse flex-grow-1 text-right" id="collapseExample" [ngbCollapse]="isCollapsed">
             <ul class="navbar-nav ml-auto flex-nowrap">
               <!-- drop down menu start -->
-              <li class="nav-item">
-                <a class="nav-link m-2 menu-item">Servicios</a>
-                <!-- First  Drop Down -->
-                <ul>
-                  <li (click)="hidemenu()" class="nav-item">
-                    <a href="#presentacion-wrap" scrollTo="teams-wrap" class="  menu-item" scrollTo="presentacion-wrap">Servicio 1</a>
-                  </li>
-                  <li (click)="hidemenu()" class="nav-item">
-                    <a href="#" scrollTo="testimonials-wrap" class="  menu-item">Servicio 2</a>
-                  </li>
-                  <li (click)="hidemenu()" class="nav-item">
-                    <a href="#" scrollTo="extra-feature-wrap" class="  menu-item">Servicio 3</a>
-                  </li>
-                </ul>
-              </li>
-              <!-- drop down menu end -->
 
-                <li (click)="hidemenu()" class="nav-item">
-                    <a href="#proyectos-wrap" scrollTo="proyectos-wrap" class="nav-link m-2 menu-item nav-active">Proyectos</a>
-                </li>
                 <li (click)="hidemenu()" class="nav-item">
                     <a href="#" scrollTo="services-wrap" class="nav-link m-2 menu-item">Sobre nosotros</a>
                 </li>

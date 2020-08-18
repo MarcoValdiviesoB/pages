@@ -10,7 +10,7 @@ export class HomeSliderComponent implements OnInit {
   protector = true;
 
   images = [
-    "assets/images/laudus2.png",
+    "assets/images/bread-bake.jpg",
     "assets/images/KROOSBAR.jpg",
     "assets/images/foto2.jpg",
   ]
