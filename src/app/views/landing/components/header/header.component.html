@@ -30,34 +30,21 @@
         <div class="collapse  navbar-collapse flex-grow-1 text-right" id="collapseExample" [ngbCollapse]="isCollapsed">
             <ul class="navbar-nav ml-auto flex-nowrap">
               <!-- drop down menu start -->
-              <li class="nav-item">
-                <a class="nav-link m-2 menu-item">Servicios</a>
-                <!-- First  Drop Down -->
-                <ul>
-                  <li (click)="hidemenu()" class="nav-item">
-                    <a href="#presentacion-wrap" scrollTo="teams-wrap" class="  menu-item" scrollTo="presentacion-wrap">Servicio 1</a>
-                  </li>
-                  <li (click)="hidemenu()" class="nav-item">
-                    <a href="#" scrollTo="testimonials-wrap" class="  menu-item">Servicio 2</a>
-                  </li>
-                  <li (click)="hidemenu()" class="nav-item">
-                    <a href="#" scrollTo="extra-feature-wrap" class="  menu-item">Servicio 3</a>
-                  </li>
-                </ul>
-              </li>
-              <!-- drop down menu end -->
 
                 <li (click)="hidemenu()" class="nav-item">
                     <a href="#proyectos-wrap" scrollTo="proyectos-wrap" class="nav-link m-2 menu-item nav-active">Proyectos</a>
                 </li>
                 <li (click)="hidemenu()" class="nav-item">
-                    <a href="#" scrollTo="services-wrap" class="nav-link m-2 menu-item">Sobre nosotros</a>
+                    <a href="#team-wrap" scrollTo="team-wrap" class="nav-link m-2 menu-item">Sobre nosotros</a>
                 </li>
 
 
 
                 <li (click)="hidemenu()" class="nav-item">
                     <a href="#" scrollTo="contacts-wrap" class="nav-link m-2 menu-item">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link m-2 menu-item">TIENDA</a>
                 </li>
             </ul>
         </div>
