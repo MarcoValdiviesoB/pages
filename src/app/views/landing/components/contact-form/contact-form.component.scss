@@ -1,10 +1,11 @@
 #contacts-wrap{
-  background-color: #f1bc32 !important;
+  background-color: rgba(0,51,161,1) !important;
+  color: white !important;
 }
 
 .form-submit-button{
-  background: #195267 !important;
-  color: white;
+  background: white !important;
+  color: black;
   opacity: 1 !important;
 }
 
@@ -12,6 +13,9 @@ i{
   margin-right: 1em;
 }
 
+h1,h2,h3,h4,p,a{
+  color: white !important;
+}
 .right-contact-wrap{
   h3{
     border-bottom: 1px solid black;

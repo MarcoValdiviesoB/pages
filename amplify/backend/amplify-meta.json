@@ -1,37 +1,21 @@
 {
     "providers": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-dexam-angular-dx-122100-authRole",
-            "UnauthRoleArn": "arn:aws:iam::405690606020:role/amplify-dexam-angular-dx-122100-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::405690606020:role/amplify-dexam-angular-dx-122100-authRole",
+            "AuthRoleName": "amplify-dexam-angular-dev-165618-authRole",
+            "UnauthRoleArn": "arn:aws:iam::405690606020:role/amplify-dexam-angular-dev-165618-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::405690606020:role/amplify-dexam-angular-dev-165618-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "amplify-dexam-angular-dx-122100-deployment",
-            "UnauthRoleName": "amplify-dexam-angular-dx-122100-unauthRole",
-            "StackName": "amplify-dexam-angular-dx-122100",
-            "StackId": "arn:aws:cloudformation:us-east-1:405690606020:stack/amplify-dexam-angular-dx-122100/ab3eed90-cdc9-11ea-9219-0acaf3694d17",
+            "DeploymentBucketName": "amplify-dexam-angular-dev-165618-deployment",
+            "UnauthRoleName": "amplify-dexam-angular-dev-165618-unauthRole",
+            "StackName": "amplify-dexam-angular-dev-165618",
+            "StackId": "arn:aws:cloudformation:us-east-1:405690606020:stack/amplify-dexam-angular-dev-165618/6f99b910-e25e-11ea-ba7c-0a200f00c284",
             "AmplifyAppId": "d2w57l7efwzoth"
         }
     },
     "hosting": {
         "S3AndCloudFront": {
             "service": "S3AndCloudFront",
-            "providerPlugin": "awscloudformation",
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/amplify-dexam-angular-dx-122100-deployment/amplify-cfn-templates/hosting/template.json",
-                "logicalId": "hostingS3AndCloudFront"
-            },
-            "lastPushTimeStamp": "2020-08-08T17:00:52.708Z",
-            "output": {
-                "CloudFrontSecureURL": "https://d3c8vmeb6ytorl.cloudfront.net",
-                "S3BucketSecureURL": "https://dexam-angular-20200724122241-hostingbucket-dx.s3.amazonaws.com",
-                "CloudFrontOriginAccessIdentity": "EP4ABRJJN5AWK",
-                "WebsiteURL": "http://dexam-angular-20200724122241-hostingbucket-dx.s3-website-us-east-1.amazonaws.com",
-                "CloudFrontDistributionID": "EG537IZGX41SH",
-                "Region": "us-east-1",
-                "HostingBucketName": "dexam-angular-20200724122241-hostingbucket-dx",
-                "CloudFrontDomainName": "d3c8vmeb6ytorl.cloudfront.net"
-            },
-            "lastPushDirHash": "Bk3aMC+u/DYoa4eFQuP7zBlnwd4="
+            "providerPlugin": "awscloudformation"
         }
     }
 }

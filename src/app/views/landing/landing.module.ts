@@ -64,7 +64,10 @@ import { EtapasComponent } from './components/etapas/etapas.component';
 import { PendienteComponent } from './components/pendiente/pendiente.component';
 import { MozaicoComponent } from './components/mozaico/mozaico.component';
 import { IntermedioComponent } from './components/intermedio/intermedio.component';
-import { EnConstruccionComponent } from './components/en-construccion/en-construccion.component'
+import { EnConstruccionComponent } from './components/en-construccion/en-construccion.component';
+import { UbicationComponent } from './ubication/ubication.component';
+import { UbicacionComponent } from './components/ubicacion/ubicacion.component';
+import { FullWidthSectionComponent } from './components/full-width-section/full-width-section.component'
 
 @NgModule({
   imports: [
@@ -133,6 +136,9 @@ import { EnConstruccionComponent } from './components/en-construccion/en-constru
     MozaicoComponent,
     IntermedioComponent,
     EnConstruccionComponent,
+    UbicationComponent,
+    UbicacionComponent,
+    FullWidthSectionComponent,
 
   ],
   providers: [WINDOW_PROVIDERS]
