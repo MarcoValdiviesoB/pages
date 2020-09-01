@@ -1,0 +1,18 @@
+"PUT" : {
+  "PARAMS" : {
+    "crearTabla" : "Flag para saber si hay que crear la tabla del elemento a insertar",
+    "tabla" : "Tabla a la cual se va a insertar el elemento"
+  }
+  "Body" : "Producto a insertar"
+}
+
+## put/tabla='sinex'&crearTabla='true'
+
+"GET" : {
+  "PARAMS" : {
+    "tabla" : "Tabla de la cual se conseguiran los objetos",
+    "limite" : "Limite de objetos a obtener"
+  }
+}
+
+## get/tabla='sinex'&limite=2

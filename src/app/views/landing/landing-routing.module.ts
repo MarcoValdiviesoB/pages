@@ -18,7 +18,7 @@ import { LandingV11Component } from "./landing-v11/landing-v11.component";
 const routes: Routes = [
   {
     path: "",
-    component: LandingV6Component
+    component: LandingV4Component
   },
   {
     path: "v1",

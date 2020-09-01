@@ -16,7 +16,7 @@ import {WINDOW_PROVIDERS, WINDOW} from "../../helpers/window.helpers";
 })
 export class HeaderComponent implements OnInit {
   isFixed;
-  logo = "logo-circular.png";
+  logo = "sinexion-logo.png";
   public isCollapsed = true;
   constructor(
     @Inject(DOCUMENT) private document: Document,
