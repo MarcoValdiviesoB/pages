@@ -21,10 +21,6 @@ const routes: Routes = [
     component: LandingV2Component
   },
   {
-    path: "tienda",
-    component: EnConstruccionComponent
-  },
-  {
     path: "v1",
     component: LandingV1Component
   },

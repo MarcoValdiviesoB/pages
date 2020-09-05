@@ -5,7 +5,7 @@ app-home-slider{
 }
 .btn{
   box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.3);
-  background: black;
+  background: rgba(0,51,161,1);
   color: white;
   font-size: 1em;
   width: 70%;

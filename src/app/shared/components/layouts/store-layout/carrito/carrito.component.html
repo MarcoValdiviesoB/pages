@@ -1,0 +1,27 @@
+<div class="carrito-wrapper">
+  <div class="card outer-card">
+    <div class="en-carro">
+      <h3 style="font-weight:bold;">CARRITO DE COMPRAS</h3>
+      <div class="row">
+        <div *ngFor="let obj of store.carritoKeys" class="card item">
+          <div class="card-header">
+            {{store.carrito[obj].producto.name}}
+          </div>
+          <div class="card-content">
+            <img src={{store.carrito[obj].producto.img}}>
+            <h6 style="text-align:center">{{store.carrito[obj].cantidad}} x $1000</h6>
+            <h6 style="text-align:center"> = ${{store.carrito[obj].cantidad*1000}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="total">
+      <h4>TOTAL : ${{store.total}}</h4>
+      <button (click)="pagar()" class="btn">PAGAR</button>
+    </div>
+
+    <div class="actions">
+    </div>
+  </div>
+</div>

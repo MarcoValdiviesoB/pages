@@ -42,7 +42,6 @@ import { IntroSevenComponent } from './components/intro-seven/intro-seven.compon
 import { LandingV7Component } from './landing-v7/landing-v7.component';
 import { IntroEightComponent } from './components/intro-eight/intro-eight.component';
 import { LandingV8Component } from './landing-v8/landing-v8.component';
-import { HeaderComponent } from './components/header/header.component';
 import { HeaderWhiteComponent } from './components/header-white/header-white.component';
 import { IntroNineComponent } from './components/intro-nine/intro-nine.component';
 import { LandingV9Component } from './landing-v9/landing-v9.component';
@@ -67,7 +66,8 @@ import { IntermedioComponent } from './components/intermedio/intermedio.componen
 import { EnConstruccionComponent } from './components/en-construccion/en-construccion.component';
 import { UbicationComponent } from './ubication/ubication.component';
 import { UbicacionComponent } from './components/ubicacion/ubicacion.component';
-import { FullWidthSectionComponent } from './components/full-width-section/full-width-section.component'
+import { FullWidthSectionComponent } from './components/full-width-section/full-width-section.component';
+import { InstagramComponent } from './components/instagram/instagram.component'
 
 @NgModule({
   imports: [
@@ -75,8 +75,8 @@ import { FullWidthSectionComponent } from './components/full-width-section/full-
     LandingRoutingModule,
     NguCarouselModule,
     NgbModule,
-
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   declarations: [
     HomeSliderComponent,
@@ -116,7 +116,6 @@ import { FullWidthSectionComponent } from './components/full-width-section/full-
     LandingV7Component,
     IntroEightComponent,
     LandingV8Component,
-    HeaderComponent,
     ScrollToDirective,
     HeaderWhiteComponent,
     IntroNineComponent,
@@ -139,10 +138,72 @@ import { FullWidthSectionComponent } from './components/full-width-section/full-
     UbicationComponent,
     UbicacionComponent,
     FullWidthSectionComponent,
+    InstagramComponent,
 
   ],
-  providers: [WINDOW_PROVIDERS]
-
+  providers: [WINDOW_PROVIDERS],
+  exports: [
+    HomeSliderComponent,
+    ServiciosScrollComponent,
+    LandingV1Component,
+    Intro1Component,
+    Intro2Component,
+    Works1Component,
+    Works2Component,
+    WorksCarouselComponent,
+    ServicesComponent,
+    ServicesCauroselComponent,
+    TestimonialComponent,
+    TestimonialCauroselComponent,
+    PricingOneComponent,
+    ContactFormComponent,
+    FooterComponent,
+    LandingV2Component,
+    FeaturesComponent,
+    FeaturesTwoComponent,
+    BestComponent,
+    LeftImageComponent,
+    RightImageComponent,
+    TeamComponent,
+    NewsComponent,
+    FaqsComponent,
+    NewsTwoComponent,
+    IntroThreeComponent,
+    LandingV3Component,
+    IntroFourComponent,
+    LandingV4Component,
+    IntroFiveComponent,
+    LandingV5Component,
+    LandingV6Component,
+    IntroSixComponent,
+    IntroSevenComponent,
+    LandingV7Component,
+    IntroEightComponent,
+    LandingV8Component,
+    ScrollToDirective,
+    HeaderWhiteComponent,
+    IntroNineComponent,
+    LandingV9Component,
+    IntroTenComponent,
+    LandingV10Component,
+    DemosComponent,
+    BlogDetailsComponent,
+    BlogDetailsPageComponent,
+    IntroElevenComponent,
+    LandingV11Component,
+    PresentacionComponent,
+    ProductosPreviewComponent,
+    ProyectosComponent,
+    EtapasComponent,
+    PendienteComponent,
+    MozaicoComponent,
+    IntermedioComponent,
+    EnConstruccionComponent,
+    UbicationComponent,
+    UbicacionComponent,
+    FullWidthSectionComponent,
+    InstagramComponent
+  ]
   // exports: ScrollToDirective
 })
 export class LandingModule {}

@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="store_wrap ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <div *ngIf="store.toggled == 'toolbar'" class="toolbar-wrap">
+            <app-store-toolbar></app-store-toolbar>
+          </div>
+          <div *ngIf="store.toggled == 'carrito'" class="carrito-wrap">
+            <app-carrito></app-carrito>
+          </div>
+          <div class="controls">
+            <div [ngStyle]= "getOptionStyle('toolbar')" (click) = "store.toggle('toolbar')" class="circle filtros-wrapper">
+              <i class="fas fa-filter"></i>
+            </div>
+            <div [ngStyle]= "getOptionStyle('carrito')" (click) = "store.toggle('carrito')" class="circle carrito-wrapper">
+              <i  class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="route">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn">VOLVER</button>
+                </div>
+                <div class="col-6">
+                  <div class="breadcrumb">
+                    <h5> <span *ngFor="let bread of breadcrumb">/ {{bread}}</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+    <!-- <app-news></app-news> -->
+</div>

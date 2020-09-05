@@ -3,12 +3,13 @@ import {NgModule} from "@angular/core";
 import {Routes, RouterModule} from "@angular/router";
 
 import {AuthLayoutComponent} from "./shared/components/layouts/auth-layout/auth-layout.component";
+import { StoreLayoutComponent } from './shared/components/layouts/store-layout/store-layout.component';
 
 const routes: Routes = [
   {
-    path: "lala",
+    path: "",
     // comment out this 2 line to make any landing demo as your root .
-    redirectTo: "landing/demos",
+    redirectTo: "home",
 
     pathMatch: "full",
 
@@ -36,7 +37,18 @@ const routes: Routes = [
      **/
   },
   {
-    path: "",
+    path: "tienda",
+    component: StoreLayoutComponent,
+    children: [
+      {
+        path: "",
+        loadChildren: () =>
+          import("./views/store/store.module").then((m) => m.StoreModule),
+      },
+    ],
+  },
+  {
+    path: "home",
     component: LandingLayoutComponent,
     children: [
       {

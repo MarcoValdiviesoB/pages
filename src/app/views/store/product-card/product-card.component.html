@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-header">
+    <img class="img-responsive" [src]="producto.img">
+  </div>
+  <div class="card-body">
+    <h4 style="text-align:center;font-size:2em;">{{producto.name}}</h4>
+    <h6 style="text-align:Center;font-size:2em;font-weight:300;">${{producto.price}}</h6>
+    <a [routerLink]="['detail/'+producto.code]"><button class="btn">Ver mas</button></a>
+  </div>
+</div>
