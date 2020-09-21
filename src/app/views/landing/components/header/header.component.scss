@@ -1,7 +1,6 @@
 #home-header {
   position: fixed;
   width: 100%;
-  background: transparent;
   top: 0;
   left: 0;
   right: 0;
@@ -9,6 +8,8 @@
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   z-index: 9999;
+  background: white !important;
+
 }
 
 a {
