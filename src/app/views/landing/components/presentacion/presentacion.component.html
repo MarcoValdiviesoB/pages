@@ -8,7 +8,30 @@
         <p class="bt" style="float:right;">Cuentanos tu idea y conversemos</p>
 
 
-        <button class="btn">COTIZA TU PROYECTO</button>
+        <div  class="btn" [ngClass]="opened ? 'opened' : 'closed'" id="cotizador">
+          <span (click)="open()">COTIZA TU PROYECTO</span>
+          <div *ngIf="opened">
+            <div class="row">
+              <div class="col-12">
+                <h3>Cual es tu nombre?</h3>
+                <input placeholder="Nombre">
+              </div>
+              <div class="col-12">
+                <h3>Escribenos aca sobre que trata tu proyecto</h3>
+                <textarea placeholder="Cuentanos de tu proyecto aqui" name="proyecto"></textarea>
+              </div>
+              <div class="col-6">
+                <h3>Porfavor ingresa tu correo y te contactaremos</h3>
+                <input placeholder="Correo">
+              </div>
+              <div class="col-6">
+                <h3>o tambien puedes ingresar tu numero de telefono</h3>
+                <input placeholder="Tu telofono aqui">
+              </div>
+            </div>
+            <button (click)="open()" class="btn subm">Listo!</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

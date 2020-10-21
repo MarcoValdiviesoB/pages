@@ -46,3 +46,33 @@
 app-proyectos, app-productos-preview{
   font-size: 0.6em !important;
 }
+
+.opened{
+  width: 100%;
+  margin: 0 !important;
+  padding: 2em;
+  padding-bottom: 4em;
+}
+
+#cotizador{
+  .subm{
+    position: absolute;
+    bottom: 1em;
+    right: 2em;
+    width: 8em;
+  }
+  h3{
+    color: white;
+    float: left;
+  }
+  textarea, input{
+    margin-bottom: 1em;
+    text-align: left;
+    width: 100%;
+    background-color: Transparent;
+    box-shadow: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+}

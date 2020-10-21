@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentacionComponent implements OnInit {
 
+  opened = false
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  open(){
+    this.opened = !this.opened
   }
 
 }
