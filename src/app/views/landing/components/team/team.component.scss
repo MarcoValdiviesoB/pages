@@ -6,6 +6,7 @@
   width: 10.5vw;
   height: 10.5vw;
   margin-bottom: 2em;
+  margin: 1em auto;
   img{
     width: 60%;
     margin-left: 5%;
@@ -33,7 +34,15 @@ h1{
   }
 }
 
+p{
+  text-align: justify;
+  font-size: 1.2em;
+}
+
 @media (max-width: 600px) {
+  .p-t-b-80{
+    padding: 0 !important;
+  }
   .team-wrap{
     font-size: 1.1em !important;
     .btn{
@@ -50,12 +59,23 @@ h1{
     }
     h3{
       font-size: 0.85em;
+      margin-bottom: 1em;
     }
     img{
       margin-top: 20% !important;
     }
-    .valor{
-      margin-left: 3.5vw;
-    }
+
   }
+}
+
+#almut{
+  h2,h3{
+    float: left;
+    display:block;
+    width: 100%;
+  }
+  h2{
+    font-weight: bold;
+  }
+
 }

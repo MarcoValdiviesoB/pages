@@ -52,8 +52,15 @@
 @media screen and (orientation:portrait) {
   :host ::ng-deep .carousel-item img{
     width: auto !important;
-    height: 65vh;
+    height: 88vh;
     object-fit: cover;
+  }
+  .carousel-caption{
+    top: 22.5% !important;
+  }
+  .wh{
+    float: right;
+    margin-top: 20vh;
   }
 }
 @media screen and (orientation:landscape) {

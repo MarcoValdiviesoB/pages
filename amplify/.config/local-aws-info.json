@@ -8,5 +8,10 @@
         "configLevel": "project",
         "useProfile": true,
         "profileName": "aws-sansano"
+    },
+    "dev": {
+        "configLevel": "project",
+        "useProfile": false,
+        "awsConfigFilePath": "/home/rem/.amplify/awscloudformation/1vis1RZSl4"
     }
 }

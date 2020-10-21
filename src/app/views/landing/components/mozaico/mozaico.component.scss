@@ -68,3 +68,12 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 600px) {
+  .img-0{
+    display: block !important;
+  }
+  .imagenes{
+    display: none;
+  }
+}

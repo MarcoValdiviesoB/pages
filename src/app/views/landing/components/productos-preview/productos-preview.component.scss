@@ -34,10 +34,16 @@
     font-size: 1.1em !important;
     .btn{
       width: 80%;
-      margin-left: 10%;
+      margin-left: 0;
     }
     img{
+      margin-bottom: 6em;
       display: none;
+    }
+    h1{
+      margin-left: 0 !important;
+      float: left;
+      text-align: left;
     }
   }
 }

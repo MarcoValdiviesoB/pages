@@ -1,13 +1,23 @@
 <div class="landing_wrap " [ngClass]="[backgroundColor]">
     <app-header></app-header>
     <app-home-slider></app-home-slider>
-    <app-presentacion></app-presentacion>
-    <app-productos-preview></app-productos-preview>
-    <app-intermedio></app-intermedio>
     <app-proyectos></app-proyectos>
-    <app-team></app-team>
-    <!-- <app-news></app-news> -->
+    <div class="toScroll">
+      <div *ngIf="scrolled(10)" @fadeSlideInOut>
+        <app-presentacion></app-presentacion>
+        <app-team></app-team>
+      </div>
+      <div *ngIf="scrolled(10)" @SlideLeftInOut>
+      </div>
+      <div *ngIf="scrolled(600)" @fadeSlideInOut>
+      </div>
+      <div *ngIf="scrolled(1000)"@SlideRightInOut>
+      </div>
+      <div *ngIf="scrolled(1100)" @fadeSlideInOut>
+        <app-intermedio></app-intermedio>
+      </div>
 
+    </div>
     <app-contact-form></app-contact-form>
     <app-footer></app-footer>
     <!-- customizer start -->

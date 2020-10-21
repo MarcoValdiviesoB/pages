@@ -23,6 +23,16 @@ export class ProyectosComponent implements OnInit {
          { width:12, src:"1.jpg" },
          { width: 6, src:"2.jpg" },
          { width: 6, src:"4.jpg" },
+       ],
+       obras: [
+         "Diseño y habilitación de Baños Tap Room / Demolición existentes y Obras civiles nuevos Baños",
+         "Diseño interiorismo / Fabricación e instalación de Barra Cubierta Acero Inox  y recubrimientos por Marca / Recubrimientos Muros Planchas Oxidadas / Fabricación e instalación de Lámparas y alumbrado general / Pintura General",
+         "Corta vista exterior / separador área fabricación",
+         "Mobiliarios externos Terraza / Mesas / Sillas / Pérgola madera sobre estructura metálica / Maceteros plantas",
+         "Mobiliarios Oficinas y salas de reuniones / Bodegas / Cuartos fríos",
+         "Instalaciones eléctricas en General",
+         "Mobiliarios Kitchenette y Casino empleados completo",
+         "Portones eléctricos para estacionamientos"
        ]
      },
      "Uss":{
@@ -41,6 +51,12 @@ export class ProyectosComponent implements OnInit {
          { width:12, src:"1.jpg" },
          { width: 6, src:"2.jpg" },
          { width: 6, src:"3.jpg" },
+       ],
+       obras: [
+         "Obras civiles / Demolición e implementación de Oficinas / Diseño y Remodelación de planta completa",
+         "Diseño y fabricación de Mobiliarios",
+         "Diseño e instalación de Gráficas y mamparas de cristal",
+         "Diseño e instalación de Salas de reuniones / Interiorismo y Mobiliarios"
        ]
      },
      "UC Christus":{
@@ -50,6 +66,12 @@ export class ProyectosComponent implements OnInit {
          { width:12, src:"1.jpg" },
          { width: 6, src:"2.jpg" },
          { width: 6, src:"3.jpg" },
+       ],
+       obras: [
+         "Diseño y Fabricación Lockers personal trabajo",
+         "Diseño y Fabricación Mueble recepción acceso Sur",
+         "Mueble recarga dispositivos electrónicos",
+         "Kitchenette"
        ]
      },
      "Clinica Santa María":{
