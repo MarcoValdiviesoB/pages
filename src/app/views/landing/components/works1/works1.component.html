@@ -1,126 +1,29 @@
 <section id="works-wrap" class="work1Wrap">
     <div class="container">
+      <h1 id="titulo" style="text-align:center;">NUESTROS TRABAJOS</h1>
         <div class="row">
-            <div class=" section-header col-md-12 mb-5">
-                <h2 class="font-weight-bold"> Recent Works</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ea quam laborum, ducimus, laboriosam sint dolorum aspernatur libero.</p>
+          <div class="col-4">
+            <img (scroll)="scrollIframe($event)" id="phone" src="assets/images/phone.png">
+            <div id="wrapper" >
+              <iframe  id="content" src="https://almut.cl"></iframe>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-6 mb-4">
+          </div>
+          <div class="col-8 side">
+            <h1><b>ALMUT</b></h1>
+            <h2>Diseño y desarrollo</h2>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                <div class="card o-hidden ">
-                    <img class="card-img-top" src="./assets/images/landing/products/products9.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Work one</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                    <div class="card-footer pl-3">
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-link-2-outline"></span>
-                        </a>
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-share"></span>
-                        </a>
-                    </div>
+            <div class="otros-trabajos">
+              <h1>MAS TRABAJOS</h1>
+              <div class="row">
+                <div *ngFor="let work of works" class="col-4 works">
+                  <div class="work">
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-6 mb-4">
-                <div class="card o-hidden">
-                    <img class="card-img-top" src="./assets/images/landing/products/products15.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Work two</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                    <div class="card-footer pl-3">
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-link-2-outline"></span>
-                        </a>
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-share"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-sm-6 mb-4">
-                <div class="card o-hidden">
-                    <img class="card-img-top" src="./assets/images/landing/products/products11.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Work Three</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                    <div class="card-footer pl-3">
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-link-2-outline"></span>
-                        </a>
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-share"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-sm-6 mb-lg-0  mb-4">
-                <div class="card o-hidden">
-                    <img class="card-img-top" src="./assets/images/landing/products/products12.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Work Four</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                    <div class="card-footer pl-3">
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-link-2-outline"></span>
-                        </a>
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-share"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-sm-6 mb-lg-0 mb-md-0 mb-sm-0 mb-4">
-                <div class="card o-hidden">
-                    <img class="card-img-top" src="./assets/images/landing/products/products14.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Work Five</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                    <div class="card-footer pl-3">
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-link-2-outline"></span>
-                        </a>
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-share"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-sm-6 mb-lg-0 mb-md-0 mb-sm-0">
-                <div class="card o-hidden">
-                    <img class="card-img-top" src="./assets/images/landing/products/products17.svg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Work Six</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                        </p>
-                    </div>
-                    <div class="card-footer pl-3">
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-link-2-outline"></span>
-                        </a>
-                        <a href="#" class="btn btn-lg p-1 text-dark mr-1">
-                            <span class="eva eva-share"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
     </div>
 </section>

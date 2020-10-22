@@ -1,0 +1,47 @@
+#phone{
+  width: 58vw;
+  max-width: 58vw;
+  position: absolute;
+  margin-left: -10vw;
+  z-index: 1;
+}
+
+#content{
+  border-radius: 10px;
+  border: none;
+  margin-left: -0.25vw;
+  height: 100%;
+  z-index: 10;
+  width: 17vw;
+  overflow: hidden;
+}
+
+#wrapper{
+  margin-top: 15vh;
+  height: 32vw;
+  width: 18vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.side{
+  padding-top: 6em;
+}
+
+.work{
+  background-color: rgba(155,155,155,0.4);
+  margin-top: 2em;
+  border-radius: 1em;
+  width: 80%;
+  height: 15em;
+}
+.otros-trabajos{
+  margin-top: 4em;
+}
+
+#titulo{
+  border-radius: 10px;
+  height: 10px;
+  box-shadow: 0 55px 0 0 orange;
+  margin-bottom: 1em;
+}
