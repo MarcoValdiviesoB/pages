@@ -66,14 +66,12 @@ import { MozaicoComponent } from './components/mozaico/mozaico.component';
 import { IntermedioComponent } from './components/intermedio/intermedio.component';
 import { EnConstruccionComponent } from './components/en-construccion/en-construccion.component';
 import { CotizadorComponent } from './components/cotizador/cotizador.component'
-
 @NgModule({
   imports: [
     CommonModule,
     LandingRoutingModule,
     NguCarouselModule,
     NgbModule,
-
     FormsModule
   ],
   declarations: [
